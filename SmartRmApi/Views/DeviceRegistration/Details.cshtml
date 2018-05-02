@@ -1,0 +1,43 @@
+﻿@model SmartRmApi.Models.tbl_deviceRegistration
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_deviceRegistration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.gcm_regId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gcm_regId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.device_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.device_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.device_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.device_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

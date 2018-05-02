@@ -1,0 +1,43 @@
+﻿@model SmartRmApi.Models.tbl_orderDetail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_orderDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_order.create_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_order.create_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amout)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amout)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
